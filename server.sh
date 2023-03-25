@@ -4,7 +4,7 @@
 LINKER="lld"
 DIR=`readlink -f .`
 MAIN=`readlink -f ${DIR}/..`
-KERNEL_DEFCONFIG=alioth_defconfig
+KERNEL_DEFCONFIG=apollo_defconfig
 export PATH="$MAIN/clang/bin:$PATH"
 export ARCH=arm64
 export SUBARCH=arm64
@@ -51,7 +51,7 @@ cd tmp
 7za a -mx9 tmp.zip *
 cd ..
 rm *.zip
-cp -fp tmp/tmp.zip RealKing-Alioth-MiUi-$TIME.zip
+cp -fp tmp/tmp.zip RealKing-Apollo-MiUi-$TIME.zip
 rm -rf tmp
 echo $TIME
 
